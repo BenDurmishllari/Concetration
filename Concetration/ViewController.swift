@@ -34,7 +34,7 @@ class ViewController: UIViewController
     @IBAction func touchCard(_ sender: UIButton)
     {
         flipCounter += 1
-        if let cardNumber = cardButtons.index(of: sender)
+        if let cardNumber = cardButtons.firstIndex(of: sender)
         {
             flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
         }
@@ -53,7 +53,7 @@ class ViewController: UIViewController
         if button.currentTitle == emoji
         {
             button.setTitle("", for: UIControl.State.normal)
-            button.backgroundColor  = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            button.backgroundColor  = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
         }
         else
         {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5A16C7522D56DA0004D663C /* Concetration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A16C7422D56DA0004D663C /* Concetration.swift */; };
+		B5A16C7722D56E7B004D663C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A16C7622D56E7B004D663C /* Card.swift */; };
 		B5ECC25922C2389F00DA75BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECC25822C2389F00DA75BE /* AppDelegate.swift */; };
 		B5ECC25B22C2389F00DA75BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECC25A22C2389F00DA75BE /* ViewController.swift */; };
 		B5ECC25E22C2389F00DA75BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ECC25C22C2389F00DA75BE /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5A16C7422D56DA0004D663C /* Concetration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concetration.swift; sourceTree = "<group>"; };
+		B5A16C7622D56E7B004D663C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B5ECC25522C2389F00DA75BE /* Concetration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concetration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ECC25822C2389F00DA75BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5ECC25A22C2389F00DA75BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				B5ECC26A22C23B4700DA75BE /* Supporting Files */,
 				B5ECC25A22C2389F00DA75BE /* ViewController.swift */,
 				B5ECC25C22C2389F00DA75BE /* Main.storyboard */,
+				B5A16C7422D56DA0004D663C /* Concetration.swift */,
+				B5A16C7622D56E7B004D663C /* Card.swift */,
 				B5ECC26422C238A100DA75BE /* Info.plist */,
 			);
 			path = Concetration;
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5ECC25B22C2389F00DA75BE /* ViewController.swift in Sources */,
+				B5A16C7522D56DA0004D663C /* Concetration.swift in Sources */,
 				B5ECC25922C2389F00DA75BE /* AppDelegate.swift in Sources */,
+				B5A16C7722D56E7B004D663C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
