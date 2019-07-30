@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    lazy var game = Concetration(numberOfPairsOfCards: cardButtons.count / 2)
 
     var flipCounter = 0
     {
@@ -17,8 +19,6 @@ class ViewController: UIViewController
         {
             flipCountLablel.text = "Flip: \(flipCounter)"
         }
-    
-        
     }
 
     @IBOutlet weak var flipCountLablel: UILabel!
@@ -27,8 +27,8 @@ class ViewController: UIViewController
     
     // array with emoji
     var emojiChoices = ["🐶", "🐸", "🐸",
-                        "🐯","🐶", "🐷",
-                        "🐰", "🐰","🐼",
+                        "🐯", "🐶", "🐷",
+                        "🐰", "🐰", "🐼",
                         "🐼", "🐷", "🐯"]
     
     @IBAction func touchCard(_ sender: UIButton)
@@ -36,16 +36,14 @@ class ViewController: UIViewController
         flipCounter += 1
         if let cardNumber = cardButtons.firstIndex(of: sender)
         {
-            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            game.chooseCard(at: cardNumber)
         }
         else
         {
             print("chosen card was not in cardButtons")
         }
-        
     }
     
- 
     
     func flipCard(withEmoji emoji: String, on button: UIButton)
     {
