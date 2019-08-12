@@ -21,7 +21,7 @@ class Concetration
         {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index
             {
-//                // check if cards match
+                // check if cards match
                 if cards[matchIndex].identifier == cards[index].identifier
                 {
                     cards[matchIndex].isMatched = true
@@ -52,6 +52,6 @@ class Concetration
             cards += [card, card]
         }
         // TODO: Shuffle the cards
-        
+        cards.shuffle()
     }
 }

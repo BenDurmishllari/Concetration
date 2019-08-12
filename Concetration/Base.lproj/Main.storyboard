@@ -139,7 +139,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="flipCountLablel" destination="4Kx-mo-tk0" id="Bi0-J5-LVe"/>
+                        <outlet property="flipCountLabel" destination="4Kx-mo-tk0" id="Bi0-J5-LVe"/>
                         <outletCollection property="cardButtons" destination="XiY-wP-DeZ" collectionClass="NSMutableArray" id="iLP-zr-4tt"/>
                         <outletCollection property="cardButtons" destination="m6m-tI-GrP" collectionClass="NSMutableArray" id="7LH-k0-GPp"/>
                         <outletCollection property="cardButtons" destination="ON9-Ny-xo0" collectionClass="NSMutableArray" id="d6N-Rr-bPY"/>

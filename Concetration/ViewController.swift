@@ -12,16 +12,23 @@ class ViewController: UIViewController
 {
     
     lazy var game = Concetration(numberOfPairsOfCards: cardButtons.count / 2)
-
+    
+//    var game: Concetration!
+//    {
+//        didSet
+//        {
+//            updateViewFromModel()
+//        }
+//    }
     var flipCounter = 0
     {
         didSet
         {
-            flipCountLablel.text = "Flip: \(flipCounter)"
+            flipCountLabel.text = "Flip: \(flipCounter)"
         }
     }
 
-    @IBOutlet weak var flipCountLablel: UILabel!
+    @IBOutlet weak var flipCountLabel: UILabel!
     
     @IBOutlet var cardButtons: [UIButton]!
     
