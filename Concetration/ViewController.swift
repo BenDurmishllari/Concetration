@@ -11,15 +11,14 @@ import UIKit
 class ViewController: UIViewController
 {
     
-    lazy var game = Concetration(numberOfPairsOfCards: cardButtons.count / 2)
+    lazy var game: Concetration =
+        Concetration(numberOfPairsOfCards: numberOfPairsOfCards)
     
-//    var game: Concetration!
-//    {
-//        didSet
-//        {
-//            updateViewFromModel()
-//        }
-//    }
+    var numberOfPairsOfCards: Int
+    {
+        get {return (cardButtons.count + 1) / 2}
+    }
+
     var flipCounter = 0
     {
         didSet
