@@ -21,14 +21,18 @@ class Concetration
             
             for index in cards.indices
             {
-                if foundIndex == nil
+                if cards[index].isFaceUp
                 {
-                    foundIndex = index
+                    if foundIndex == nil
+                    {
+                        foundIndex = index
+                    }
+                    else
+                    {
+                        return nil
+                    }
                 }
-                else
-                {
-                    return nil
-                }
+                
             }
             return foundIndex
         }
@@ -54,16 +58,16 @@ class Concetration
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceUp = true
-                indexOfOneAndOnlyFaceUpCard = nil
+                //indexOfOneAndOnlyFaceUpCard = nil
             }
             else
             {
                 // either no cards or 2 cards are face up
-                for flipDownIndex in cards.indices
-                {
-                    cards[flipDownIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
+//                for flipDownIndex in cards.indices
+//                {
+//                    cards[flipDownIndex].isFaceUp = false
+//                }
+//                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
             }
             

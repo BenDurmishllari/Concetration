@@ -16,7 +16,7 @@ class ViewController: UIViewController
     
     var numberOfPairsOfCards: Int
     {
-        get {return (cardButtons.count + 1) / 2}
+        get{return (cardButtons.count + 1) / 2}
     }
 
     var flipCounter = 0
