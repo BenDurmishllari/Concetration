@@ -11,9 +11,9 @@ import Foundation
 
 class Concetration
 {
-    var cards = [Card] ()
+    private(set) var cards = [Card] ()
     
-    var indexOfOneAndOnlyFaceUpCard: Int?
+    private var indexOfOneAndOnlyFaceUpCard: Int?
     {
         get
         {
@@ -32,7 +32,6 @@ class Concetration
                         return nil
                     }
                 }
-                
             }
             return foundIndex
         }
@@ -47,6 +46,11 @@ class Concetration
     
     func chooseCard(at index: Int)
     {
+        // assert it cheking on the range of
+        // the index if its contains before to run the method
+        assert(cards.indices.contains(index),
+               "Concetration.chooseCard(at:\(index): chosen index not in the cards")
+        
         if !cards[index].isMatched
         {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index
@@ -76,6 +80,8 @@ class Concetration
     
     init(numberOfPairsOfCards: Int)
     {
+        assert(numberOfPairsOfCards > 0,
+               "Concetation.init(\(numberOfPairsOfCards)): you must have at least pn [aor pf cards")
         for _ in 1...numberOfPairsOfCards
         {
             let card = Card()
