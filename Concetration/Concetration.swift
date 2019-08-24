@@ -8,8 +8,11 @@
 
 import Foundation
 
-
-class Concetration
+// change it from class to struct
+// because it has value types, it help to don't stuck
+// the memory and to have more effient code
+// as we don't pass it around
+struct Concetration
 {
     private(set) var cards = [Card] ()
     
@@ -44,13 +47,12 @@ class Concetration
         }
     }
     
-    func chooseCard(at index: Int)
+    mutating func chooseCard(at index: Int)
     {
         // assert it cheking on the range of
         // the index if its contains before to run the method
         assert(cards.indices.contains(index),
                "Concetration.chooseCard(at:\(index): chosen index not in the cards")
-        
         if !cards[index].isMatched
         {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index
