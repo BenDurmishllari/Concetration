@@ -23,7 +23,7 @@ class ViewController: UIViewController
     {
         didSet
         {
-            updateFlipCountLabel()
+            updateFlipCountLabel() 
         }
     }
     
